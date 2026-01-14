@@ -1,0 +1,10 @@
+import streamlit as st
+from pathlib import Path
+
+st.set_page_config(
+    page_title="Glen Dsouza | SOC Analyst",
+    layout="wide"
+)
+
+html = Path("index.html").read_text(encoding="utf-8")
+st.components.v1.html(html, height=3000, scrolling=True)
